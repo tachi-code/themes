@@ -4,7 +4,7 @@
   "description": "Themes registry for Tachi Code",
   "type": "module",
   "scripts": {
-    "build": "npx tsx build.ts",
+    "build": "npx tsx build.ts && prettier --write ./themes/**/*.json",
     "prepare": "husky"
   },
   "author": "David Septimus",

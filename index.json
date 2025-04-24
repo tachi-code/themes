@@ -1,0 +1,14 @@
+{
+  "themes": [
+    {
+      "displayName": "Dark Modern",
+      "name": "dark-modern",
+      "version": "1.0.0"
+    },
+    {
+      "displayName": "Fleet",
+      "name": "fleet",
+      "version": "1.0.0"
+    }
+  ]
+}
