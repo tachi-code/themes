@@ -1,0 +1,76 @@
+{
+  "$id": "tachi-code://schemas/color-theme",
+  "type": "object",
+  "allowComments": true,
+  "allowTrailingCommas": true,
+  "required": ["name", "displayName"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Unique identifier for the theme. This is used to identify the theme in the settings and in the UI and must match the file's basename.",
+      "pattern": "^[a-z0-9-_]+$",
+      "patternErrorMessage": "Theme name must only contain lowercase letters, numbers, dashes and underscores.",
+      "default": "${1:theme-id}",
+      "defaultSnippets": [
+        {
+          "body": "${1:theme-id}"
+        }
+      ],
+      "minLength": 2,
+      "maxLength": 50
+    },
+    "displayName": {
+      "type": "string",
+      "description": "Display name of the theme. This is displayed in the UI.",
+      "default": "${1:Theme Name}",
+      "defaultSnippets": [
+        {
+          "body": "${1:Theme Name}"
+        }
+      ],
+      "pattern": "^[^\t\n]+$",
+      "patternErrorMessage": "Theme name must not contain new lines.",
+      "minLength": 2,
+      "maxLength": 50
+    },
+    "version": {
+      "type": "string",
+      "description": "Version of the theme. This is used to identify the version of the theme in the settings and in the UI.",
+      "default": "1.0.0",
+      "defaultSnippets": [
+        {
+          "body": "1.0.0"
+        }
+      ],
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
+      "patternErrorMessage": "Version must be in the format x.y.z where x, y and z are numbers.",
+      "minLength": 5
+    },
+    "colors": {
+      "description": "Colors in the workbench",
+      "type": "object",
+      "unevaluatedProperties": false,
+      "allOf": [
+        {
+          "$ref": "tachi-code://schemas/workbench-colors"
+        },
+        {
+          "$ref": "tachi-code://schemas/tachi-code-colors"
+        }
+      ]
+    }
+  },
+  "tokenColors": {
+    "description": "Colors for syntax highlighting",
+    "$ref": "tachi-code://schemas/token-colors"
+  },
+  "semanticHighlighting": {
+    "type": "boolean",
+    "description": "Whether semantic highlighting should be enabled for this theme."
+  },
+  "semanticTokenColors": {
+    "type": "object",
+    "description": "Colors for semantic tokens",
+    "$ref": "tachi-code://schemas/semantic-token-colors"
+  }
+}

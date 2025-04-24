@@ -1,0 +1,16 @@
+{
+  "$id": "tachi-code://schemas/tachi-code-colors",
+  "type": "object",
+  "properties": {
+    "submenu.selectionBackground": {
+      "type": "string",
+      "description": "Background color of the selected submenu item in menus.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    }
+  }
+}
