@@ -1,0 +1,24 @@
+{
+  "name": "tachi-code-themes",
+  "version": "1.0.0",
+  "description": "Themes registry for Tachi Code",
+  "type": "module",
+  "scripts": {
+    "build": "npx tsx build.ts",
+    "prepare": "husky"
+  },
+  "author": "David Septimus",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^22.14.1",
+    "ajv": "^8.17.1",
+    "chalk": "^5.4.1",
+    "eslint": "^9.25.1",
+    "lint-staged": "^15.5.1",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7"
+  }
+}
