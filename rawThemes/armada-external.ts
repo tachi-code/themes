@@ -79,6 +79,7 @@ export default {
   displayName: "Armada-External",
   type: "dark",
   version: "1.0.0",
+  author: "David Septimus",
   colors: {
     "actionBar.toggledBackground": colors.lightTint20,
     "activityBar.activeBackground": colors.neutral30,

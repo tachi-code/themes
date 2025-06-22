@@ -4,13 +4,15 @@
       "displayName": "Armada-External",
       "name": "armada-external",
       "version": "1.0.0",
-      "type": "dark"
+      "type": "dark",
+      "author": "David Septimus"
     },
     {
       "displayName": "Dark Modern (External)",
       "name": "dark-modern-external",
       "version": "1.0.0",
-      "type": "dark"
+      "type": "dark",
+      "author": "Microsoft (Maintained by David Septimus)"
     }
   ]
 }

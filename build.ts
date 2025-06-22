@@ -19,6 +19,7 @@ interface ThemeData {
   name: string;
   type?: "light" | "dark" | "hcDark" | "hcLight";
   version: string;
+  author?: string;
 }
 
 // Import file dynamically
@@ -121,7 +122,8 @@ const build = async (): Promise<void> => {
           !themeData.name ||
           !themeData.displayName ||
           !themeData.version ||
-          !themeData.type
+          !themeData.type ||
+          !themeData.author
         ) {
           console.warn(
             chalk.yellow(`⚠️ ${file} does not contain a valid theme.`),
@@ -146,9 +148,9 @@ const build = async (): Promise<void> => {
           continue;
         }
 
-        const { displayName, name, version, type } = themeData;
+        const { displayName, name, version, type, author } = themeData;
 
-        index.themes.push({ displayName, name, version, type });
+        index.themes.push({ displayName, name, version, type, author });
 
         // Write the complete theme data to themes directory
         const outputFilename = `${name}.json`;
