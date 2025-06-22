@@ -1,18 +1,25 @@
 {
   "themes": [
     {
-      "displayName": "Armada-External",
-      "name": "armada-external",
+      "displayName": "Rosé Pine Dawn",
+      "name": "rose-pine-dawn",
       "version": "1.0.0",
-      "type": "dark",
-      "author": "David Septimus"
+      "type": "light",
+      "author": "Rosé Pine"
     },
     {
-      "displayName": "Dark Modern (External)",
-      "name": "dark-modern-external",
+      "displayName": "Solarized (dark)",
+      "name": "solarized-dark",
       "version": "1.0.0",
       "type": "dark",
-      "author": "Microsoft (Maintained by David Septimus)"
+      "author": "Microsoft"
+    },
+    {
+      "displayName": "Solarized (light)",
+      "name": "solarized-light",
+      "version": "1.0.0",
+      "type": "light",
+      "author": "Microsoft"
     }
   ]
 }
