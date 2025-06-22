@@ -4,6 +4,7 @@
   "displayName": "Armada-External",
   "type": "dark",
   "version": "1.0.0",
+  "author": "David Septimus",
   "colors": {
     "actionBar.toggledBackground": "#E0E1E433",
     "activityBar.activeBackground": "#252629",

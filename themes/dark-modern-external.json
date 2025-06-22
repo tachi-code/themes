@@ -3,6 +3,7 @@
   "displayName": "Dark Modern (External)",
   "type": "dark",
   "version": "1.0.0",
+  "author": "Microsoft (Maintained by David Septimus)",
   "colors": {
     "actionBar.toggledBackground": "#383a49",
     "activityBar.activeBorder": "#0078d4",
