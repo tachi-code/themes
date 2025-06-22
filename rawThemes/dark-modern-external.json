@@ -1,6 +1,6 @@
 {
-  "name": "dark-modern",
-  "displayName": "Dark Modern",
+  "name": "dark-modern-external",
+  "displayName": "Dark Modern (External)",
   "type": "dark",
   "version": "1.0.0",
   "colors": {

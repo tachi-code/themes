@@ -75,8 +75,8 @@ const colors = {
 
 export default {
   $schema: "vscode://schemas/color-theme",
-  name: "fleet",
-  displayName: "Fleet",
+  name: "armada-external",
+  displayName: "Armada-External",
   type: "dark",
   version: "1.0.0",
   colors: {

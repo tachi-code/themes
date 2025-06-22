@@ -17,6 +17,7 @@ const themesOutputDir = path.join(__dirname, "themes"); // New output directory
 interface ThemeData {
   displayName: string;
   name: string;
+  type?: "light" | "dark" | "hcDark" | "hcLight";
   version: string;
 }
 
@@ -115,7 +116,13 @@ const build = async (): Promise<void> => {
         const themeModule = await importFile(filePath);
         const themeData = themeModule.default;
 
-        if (!themeData || !themeData.name || !themeData.displayName) {
+        if (
+          !themeData ||
+          !themeData.name ||
+          !themeData.displayName ||
+          !themeData.version ||
+          !themeData.type
+        ) {
           console.warn(
             chalk.yellow(`⚠️ ${file} does not contain a valid theme.`),
           );
@@ -139,9 +146,9 @@ const build = async (): Promise<void> => {
           continue;
         }
 
-        const { displayName, name, version } = themeData;
+        const { displayName, name, version, type } = themeData;
 
-        index.themes.push({ displayName, name, version });
+        index.themes.push({ displayName, name, version, type });
 
         // Write the complete theme data to themes directory
         const outputFilename = `${name}.json`;

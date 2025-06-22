@@ -1,14 +1,16 @@
 {
   "themes": [
     {
-      "displayName": "Dark Modern",
-      "name": "dark-modern",
-      "version": "1.0.0"
+      "displayName": "Armada-External",
+      "name": "armada-external",
+      "version": "1.0.0",
+      "type": "dark"
     },
     {
-      "displayName": "Fleet",
-      "name": "fleet",
-      "version": "1.0.0"
+      "displayName": "Dark Modern (External)",
+      "name": "dark-modern-external",
+      "version": "1.0.0",
+      "type": "dark"
     }
   ]
 }
