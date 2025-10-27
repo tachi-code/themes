@@ -1,25 +1,277 @@
 {
   "themes": [
     {
+      "displayName": "Andromeeda",
+      "name": "andromeeda",
+      "version": "1.0.0",
+      "type": "dark",
+      "author": "@EliverLara"
+    },
+    {
+      "displayName": "Aurora X",
+      "name": "aurora-x",
+      "version": "1.0.0",
+      "type": "dark",
+      "author": "marqu3ss"
+    },
+    {
+      "displayName": "Dracula Theme Soft",
+      "name": "dracula-soft",
+      "version": "1.0.0",
+      "type": "dark",
+      "author": "dracula"
+    },
+    {
+      "displayName": "Dracula Theme",
+      "name": "dracula",
+      "version": "1.0.0",
+      "type": "dark",
+      "author": "dracula"
+    },
+    {
+      "displayName": "GitHub Dark Default",
+      "name": "github-dark-default",
+      "version": "1.0.0",
+      "type": "dark",
+      "author": "GitHub"
+    },
+    {
+      "displayName": "GitHub Dark Dimmed",
+      "name": "github-dark-dimmed",
+      "version": "1.0.0",
+      "type": "dark",
+      "author": "GitHub"
+    },
+    {
+      "displayName": "GitHub Light Default",
+      "name": "github-light-default",
+      "version": "1.0.0",
+      "type": "light",
+      "author": "GitHub"
+    },
+    {
+      "displayName": "Gruvbox Dark Hard",
+      "name": "gruvbox-dark-hard",
+      "version": "1.0.0",
+      "type": "dark",
+      "author": "@jdinhify"
+    },
+    {
+      "displayName": "Gruvbox Dark Medium",
+      "name": "gruvbox-dark-medium",
+      "version": "1.0.0",
+      "type": "dark",
+      "author": "@jdinhify"
+    },
+    {
+      "displayName": "Gruvbox Dark Soft",
+      "name": "gruvbox-dark-soft",
+      "version": "1.0.0",
+      "type": "dark",
+      "author": "@jdinhify"
+    },
+    {
+      "displayName": "Gruvbox Light Hard",
+      "name": "gruvbox-light-hard",
+      "version": "1.0.0",
+      "type": "light",
+      "author": "@jdinhify"
+    },
+    {
+      "displayName": "Gruvbox Light Medium",
+      "name": "gruvbox-light-medium",
+      "version": "1.0.0",
+      "type": "light",
+      "author": "@jdinhify"
+    },
+    {
+      "displayName": "Gruvbox Light Soft",
+      "name": "gruvbox-light-soft",
+      "version": "1.0.0",
+      "type": "light",
+      "author": "@jdinhify"
+    },
+    {
+      "displayName": "Houston",
+      "name": "houston",
+      "version": "1.0.0",
+      "type": "dark",
+      "author": "@withastro"
+    },
+    {
+      "displayName": "Kanagawa Dragon",
+      "name": "kanagawa-dragon",
+      "version": "1.0.0",
+      "type": "dark",
+      "author": "metapho-re"
+    },
+    {
+      "displayName": "Kanagawa Lotus",
+      "name": "kanagawa-lotus",
+      "version": "1.0.0",
+      "type": "light",
+      "author": "metapho-re"
+    },
+    {
+      "displayName": "Kanagawa Wave",
+      "name": "kanagawa-wave",
+      "version": "1.0.0",
+      "type": "dark",
+      "author": "metapho-re"
+    },
+    {
+      "displayName": "LaserWave",
+      "name": "laserwave",
+      "version": "1.0.0",
+      "type": "dark",
+      "author": "Jaredk3nt"
+    },
+    {
+      "displayName": "Material Theme Darker",
+      "name": "material-theme-darker",
+      "version": "1.0.0",
+      "type": "dark",
+      "author": "material-theme"
+    },
+    {
+      "displayName": "Material Theme Lighter",
+      "name": "material-theme-lighter",
+      "version": "1.0.0",
+      "type": "light",
+      "author": "material-theme"
+    },
+    {
+      "displayName": "Material Theme Ocean",
+      "name": "material-theme-ocean",
+      "version": "1.0.0",
+      "type": "dark",
+      "author": "material-theme"
+    },
+    {
+      "displayName": "Material Theme Palenight",
+      "name": "material-theme-palenight",
+      "version": "1.0.0",
+      "type": "dark",
+      "author": "material-theme"
+    },
+    {
+      "displayName": "Min Dark",
+      "name": "min-dark",
+      "version": "1.0.0",
+      "type": "dark",
+      "author": "misolori"
+    },
+    {
+      "displayName": "Min Light",
+      "name": "min-light",
+      "version": "1.0.0",
+      "type": "light",
+      "author": "misolori"
+    },
+    {
+      "displayName": "Monokai",
+      "name": "monokai",
+      "version": "1.0.0",
+      "type": "dark",
+      "author": "microsoft"
+    },
+    {
+      "displayName": "One Light",
+      "name": "one-light",
+      "version": "1.0.0",
+      "type": "light",
+      "author": "@akamud"
+    },
+    {
+      "displayName": "Plastic",
+      "name": "plastic",
+      "version": "1.0.0",
+      "type": "dark",
+      "author": "@will-stone"
+    },
+    {
+      "displayName": "Poimandres",
+      "name": "poimandres",
+      "version": "1.0.0",
+      "type": "dark",
+      "author": "drcmda"
+    },
+    {
+      "displayName": "Red",
+      "name": "red",
+      "version": "1.0.0",
+      "type": "dark",
+      "author": "microsoft"
+    },
+    {
       "displayName": "Rosé Pine Dawn",
       "name": "rose-pine-dawn",
       "version": "1.0.0",
       "type": "light",
-      "author": "Rosé Pine"
+      "author": "rose-pine"
     },
     {
-      "displayName": "Solarized (dark)",
+      "displayName": "Slack Dark",
+      "name": "slack-dark",
+      "version": "1.0.0",
+      "type": "dark",
+      "author": "slack-theme"
+    },
+    {
+      "displayName": "Slack Ochin",
+      "name": "slack-ochin",
+      "version": "1.0.0",
+      "type": "light",
+      "author": "slack-theme"
+    },
+    {
+      "displayName": "Snazzy Light",
+      "name": "snazzy-light",
+      "version": "1.0.0",
+      "type": "light",
+      "author": "loilo"
+    },
+    {
+      "displayName": "Solarized Dark",
       "name": "solarized-dark",
       "version": "1.0.0",
       "type": "dark",
       "author": "Microsoft"
     },
     {
-      "displayName": "Solarized (light)",
+      "displayName": "Solarized Light",
       "name": "solarized-light",
       "version": "1.0.0",
       "type": "light",
       "author": "Microsoft"
+    },
+    {
+      "displayName": "Synthwave '84",
+      "name": "synthwave-84",
+      "version": "1.0.0",
+      "type": "dark",
+      "author": "robb0wen"
+    },
+    {
+      "displayName": "Vesper",
+      "name": "vesper",
+      "version": "1.0.0",
+      "type": "dark",
+      "author": "raunofreiberg"
+    },
+    {
+      "displayName": "Vitesse Black",
+      "name": "vitesse-black",
+      "version": "1.0.0",
+      "type": "dark",
+      "author": "@antfu"
+    },
+    {
+      "displayName": "Vitesse Light",
+      "name": "vitesse-light",
+      "version": "1.0.0",
+      "type": "light",
+      "author": "@antfu"
     }
   ]
 }

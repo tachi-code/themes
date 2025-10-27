@@ -1,5 +1,4 @@
-Tachi Code Themes
----
+## Tachi Code Themes
 
 ## Overview
 
@@ -10,6 +9,7 @@ the [VS Code color theme schema](https://code.visualstudio.com/api/references/th
 Tachi Code editor.
 
 ## Theme Structure
+
 Raw themes can be defined as `.json`, `.js`, or `.ts` files. Tachi Code's additional workbench colors are defined
 in [tachi-code-colors.json](./schemas/tachi-code-colors.json).
 These colors typically fallback to standard VS Code colors if not defined in a theme.
@@ -19,3 +19,7 @@ These colors typically fallback to standard VS Code colors if not defined in a t
 Tachi code uses the [index.json](./index.json) file to provide a list of themes to the user.
 Individual themes are loaded on-demand from the [themes](./themes) directory when the user selects a theme inside
 the application. Loaded themes are then cached locally and updated when a version change is detected.
+
+## Shiki tm-themes
+
+This repository is currently primarily composed of a subset of themes from the shiki tm-themes collection.
