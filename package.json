@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "build": "npx tsx build.ts && prettier --write ./themes/**/*.json",
+    "build:strict": "npx tsx build.ts --strict && prettier --write ./themes/**/*.json",
+    "import": "npx tsx import-tm-themes.ts",
     "prepare": "husky"
   },
   "author": "David Septimus",
@@ -14,7 +16,8 @@
     "ajv": "^8.17.1",
     "chalk": "^5.4.1",
     "lint-staged": "^15.5.1",
-    "prettier": "^3.5.3"
+    "prettier": "^3.5.3",
+    "tm-themes": "^1.10.12"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.1",

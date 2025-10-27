@@ -9,6 +9,10 @@ import { ErrorObject } from "ajv/lib/types/index.js";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+// Parse command line arguments
+const args = process.argv.slice(2);
+const strictMode = args.includes("--strict");
+
 const schemasDir = path.join(__dirname, "schemas");
 const rawThemesDir = path.join(__dirname, "rawThemes");
 const indexFilePath = path.join(__dirname, "index.json");
@@ -96,11 +100,16 @@ const build = async (): Promise<void> => {
 
     const validate = ajv.compile(mainSchema);
 
-    console.log(chalk.blue("🔍 Scanning themes directory..."));
+    console.log(
+      chalk.blue(
+        `🔍 Scanning themes directory... ${strictMode ? chalk.yellow("[STRICT MODE]") : chalk.gray("[lenient mode]")}`,
+      ),
+    );
     // Use fs to get the theme file paths
     const files = await fs.readdir(rawThemesDir);
     let validCount = 0;
     let invalidCount = 0;
+    let warningCount = 0;
 
     for (const file of files) {
       const filePath = path.join(rawThemesDir, file);
@@ -135,17 +144,28 @@ const build = async (): Promise<void> => {
         const isValid = validate(themeData);
 
         if (!isValid) {
-          console.error(chalk.red(`❌ Theme ${file} failed validation:`));
-          console.error(
-            validate.errors
-              ?.map(
-                (error: ErrorObject) =>
-                  `${error.instancePath || "/"} ${error.message}: ${JSON.stringify(error.params, null, 2)}`,
-              )
-              .join("\n"),
-          );
-          invalidCount++;
-          continue;
+          if (strictMode) {
+            // In strict mode, fail the theme
+            console.error(chalk.red(`❌ Theme ${file} failed validation:`));
+            console.error(
+              validate.errors
+                ?.map(
+                  (error: ErrorObject) =>
+                    `${error.instancePath || "/"} ${error.message}: ${JSON.stringify(error.params, null, 2)}`,
+                )
+                .join("\n"),
+            );
+            invalidCount++;
+            continue;
+          } else {
+            // In non-strict mode, warn but still process the theme
+            console.warn(
+              chalk.yellow(
+                `⚠️  Theme ${file} has validation warnings (use --strict to fail)`,
+              ),
+            );
+            warningCount++;
+          }
         }
 
         const { displayName, name, version, type, author } = themeData;
@@ -157,11 +177,20 @@ const build = async (): Promise<void> => {
         const outputPath = path.join(themesOutputDir, outputFilename);
         await fs.writeFile(outputPath, JSON.stringify(themeData, null, 2));
 
-        console.log(
-          chalk.green(`✅ Added theme: ${chalk.bold(displayName)} - ${name}`),
-        );
-        console.log(chalk.blue(`   ↳ Saved to ${outputFilename}`));
-        validCount++;
+        if (isValid) {
+          console.log(
+            chalk.green(`✅ Added theme: ${chalk.bold(displayName)} - ${name}`),
+          );
+          console.log(chalk.blue(`   ↳ Saved to ${outputFilename}`));
+          validCount++;
+        } else {
+          console.log(
+            chalk.yellow(
+              `⚠️  Added theme with warnings: ${chalk.bold(displayName)} - ${name}`,
+            ),
+          );
+          console.log(chalk.blue(`   ↳ Saved to ${outputFilename}`));
+        }
       } catch (error) {
         console.error(chalk.red(`❌ Error processing file ${file}:`), error);
         invalidCount++;
@@ -174,11 +203,21 @@ const build = async (): Promise<void> => {
         `\n🎉 Index file created successfully with ${chalk.cyan(index.themes.length)} themes.`,
       ),
     );
-    console.log(
-      chalk.blue(
-        `📊 Summary: ${chalk.green(`${validCount} valid`)} / ${chalk.red(`${invalidCount} invalid`)} themes`,
-      ),
-    );
+
+    if (strictMode) {
+      console.log(
+        chalk.blue(
+          `📊 Summary: ${chalk.green(`${validCount} valid`)} / ${chalk.red(`${invalidCount} invalid`)} themes`,
+        ),
+      );
+    } else {
+      console.log(
+        chalk.blue(
+          `📊 Summary: ${chalk.green(`${validCount} valid`)} / ${chalk.yellow(`${warningCount} with warnings`)} / ${chalk.red(`${invalidCount} errors`)} themes`,
+        ),
+      );
+    }
+
     console.log(chalk.blue(`📦 Valid themes written to ${themesOutputDir}`));
   } catch (err) {
     console.error(chalk.red.bold(`\n💥 Error generating index:`), err);
