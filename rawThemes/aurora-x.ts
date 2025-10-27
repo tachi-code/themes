@@ -31,6 +31,7 @@ export default {
     "dropdown.background": "#15182B",
     "dropdown.foreground": "#c7d5ff99",
     "editor.background": "#07090F",
+    "editor.foreground": "#BBBBBB",
     "editor.findMatchBackground": "#576daf",
     "editor.findMatchHighlightBackground": "#262E47",
     "editor.inactiveSelectionBackground": "#262e47be",

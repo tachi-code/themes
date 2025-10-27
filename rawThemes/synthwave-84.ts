@@ -25,6 +25,7 @@ export default {
     "dropdown.background": "#232530",
     "dropdown.listBackground": "#2a2139",
     "editor.background": "#262335",
+    "editor.foreground": "#BBBBBB",
     "editor.findMatchBackground": "#D18616bb",
     "editor.findMatchHighlightBackground": "#D1861655",
     "editor.findRangeHighlightBackground": "#34294f1a",
