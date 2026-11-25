@@ -1,7 +1,7 @@
 import chalk from "chalk";
 import { promises as fs } from "fs";
 import path from "node:path";
-import { fileURLToPath } from "url";
+import { fileURLToPath, pathToFileURL } from "url";
 import { themes } from "tm-themes";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -48,6 +48,15 @@ const MANUAL_AUTHORS: Record<string, string> = {
   "github-light-default": "GitHub",
   "solarized-dark": "Microsoft",
   "solarized-light": "Microsoft",
+};
+
+const fileExists = async (filePath: string): Promise<boolean> => {
+  try {
+    await fs.access(filePath);
+    return true;
+  } catch {
+    return false;
+  }
 };
 
 interface ThemeInfo {
@@ -127,29 +136,22 @@ const importThemes = async (): Promise<void> => {
         let version = "1.0.0";
         let isUpdate = false;
 
-        try {
-          const existingContent = await fs.readFile(outputPath, "utf-8");
-          // Extract the JSON from the TypeScript export
-          const jsonMatch = existingContent.match(
-            /export default ({[\s\S]*});/,
-          );
-          if (jsonMatch) {
-            const existingTheme = JSON.parse(jsonMatch[1]);
-            if (existingTheme.hash && existingTheme.hash !== hash) {
-              // Hash changed, increment version
-              const [major, minor, patch] = (existingTheme.version || "1.0.0")
-                .split(".")
-                .map(Number);
-              version = `${major}.${minor + 1}.${patch}`;
-              isUpdate = true;
-            } else if (existingTheme.hash === hash) {
-              // Hash unchanged, keep existing version
-              version = existingTheme.version || "1.0.0";
-            }
+        if (await fileExists(outputPath)) {
+          // Raw themes are Prettier-formatted TypeScript modules, not JSON, so
+          // load the module instead of parsing its source text.
+          const existingTheme: { hash?: string; version?: string } = (
+            await import(pathToFileURL(outputPath).href)
+          ).default;
+          const existingVersion = existingTheme.version || "1.0.0";
+          if (existingTheme.hash && existingTheme.hash !== hash) {
+            // Hash changed, increment the minor version
+            const [major, minor] = existingVersion.split(".").map(Number);
+            version = `${major}.${minor + 1}.0`;
+            isUpdate = true;
+          } else {
+            // Hash unchanged, keep existing version
+            version = existingVersion;
           }
-          //@ts-expect-error no-unused-vars
-        } catch (_) {
-          // File doesn't exist or couldn't be read, use default version
         }
 
         // Create the complete theme object with metadata
