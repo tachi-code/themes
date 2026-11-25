@@ -8,7 +8,7 @@ export default {
   repository:
     "https://github.com/microsoft/vscode/blob/661626d0e72f97806550790a98fb87116c9db825/extensions/theme-defaults/themes/2026-dark.json",
   type: "dark",
-  hash: "l3zR_GdbO-ZHVNZ_tx8CSqPTRRGD4JEG5WVtxbg3DUk",
+  hash: "ORfhR26rtpNvriOQoKbqu23oN4EOk4BVXwXwA6yt1cQ",
   colors: {
     "checkbox.border": "#707070",
     "editor.background": "#121314",

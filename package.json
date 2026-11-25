@@ -7,7 +7,7 @@
     "build": "npx tsx build.ts && prettier --write ./themes/**/*.json",
     "build:strict": "npx tsx build.ts --strict && prettier --write ./themes/**/*.json",
     "import": "npx tsx import-tm-themes.ts",
-    "import:vscode": "npx tsx import-vscode-themes.ts && prettier --write ./rawThemes/*-2026.ts",
+    "import:vscode": "npx tsx import-vscode-themes.ts",
     "prepare": "husky"
   },
   "author": "David Septimus",

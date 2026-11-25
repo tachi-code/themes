@@ -4,6 +4,7 @@ import { promises as fs } from "fs";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "url";
 import { parse, ParseError, printParseErrorCode } from "jsonc-parser";
+import { format } from "prettier";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -56,14 +57,15 @@ const fetchThemeFile = async (file: string): Promise<string> => {
 };
 
 // An including theme sets a color to "default" to drop the included value.
+// Like VS Code, ignores values that are not strings.
 const mergeColors = (
   target: Record<string, string>,
-  source: Record<string, string>,
+  source: Record<string, unknown>,
 ) => {
   for (const [key, value] of Object.entries(source)) {
     if (value === "default") {
       delete target[key];
-    } else {
+    } else if (typeof value === "string") {
       target[key] = value;
     }
   }
@@ -84,12 +86,8 @@ const mergeSemanticTokenColors = (
 // Resolves a theme the way VS Code loads it: the included theme first, then
 // this file's colors over it, its token rules after the included ones, and
 // its semantic token rules over the included ones.
-const resolveTheme = async (
-  file: string,
-  sources: string[],
-): Promise<ResolvedTheme> => {
+const resolveTheme = async (file: string): Promise<ResolvedTheme> => {
   const text = await fetchThemeFile(file);
-  sources.push(text);
 
   const errors: ParseError[] = [];
   const content = parse(text, errors, { allowTrailingComma: true });
@@ -102,7 +100,6 @@ const resolveTheme = async (
   const resolved: ResolvedTheme = content.include
     ? await resolveTheme(
         path.posix.join(path.posix.dirname(file), content.include),
-        sources,
       )
     : {
         colors: {},
@@ -140,16 +137,25 @@ const importThemes = async (): Promise<void> => {
 
   for (const { name, displayName, type, file } of THEMES) {
     try {
-      const sources: string[] = [];
-      const themeData = await resolveTheme(file, sources);
+      const identity = {
+        name,
+        displayName,
+        description: `${displayName} theme`,
+      };
+      const source = {
+        author: "Microsoft",
+        license: "MIT",
+        repository: `https://github.com/microsoft/vscode/blob/${VSCODE_COMMIT}/${THEMES_PATH}/${file}`,
+        type,
+      };
+      const themeData = await resolveTheme(file);
 
-      // Hash every file of the include chain, so that a change to an
-      // included theme counts as a change to this one.
+      // Hash everything that is published, so that any change to it counts
       const hash = createHash("sha256")
-        .update(sources.join("\n"))
+        .update(JSON.stringify({ ...identity, ...source, ...themeData }))
         .digest("base64url");
 
-      // Keep the version while the upstream content is unchanged, bump it otherwise
+      // Keep the version while the theme is unchanged, bump it otherwise
       const outputPath = path.join(rawThemesDir, `${name}.ts`);
       let version = "1.0.0";
       let isUpdate = false;
@@ -169,21 +175,19 @@ const importThemes = async (): Promise<void> => {
         }
       }
 
+      // Formatted here as the pre-commit hook formats the raw themes
       const completeTheme = {
-        name,
-        displayName,
-        description: `${displayName} theme`,
+        ...identity,
         version,
-        author: "Microsoft",
-        license: "MIT",
-        repository: `https://github.com/microsoft/vscode/blob/${VSCODE_COMMIT}/${THEMES_PATH}/${file}`,
-        type,
+        ...source,
         hash,
         ...themeData,
       };
-
       const tsContent = `export default ${JSON.stringify(completeTheme, null, 2)};\n`;
-      await fs.writeFile(outputPath, tsContent);
+      await fs.writeFile(
+        outputPath,
+        await format(tsContent, { filepath: outputPath }),
+      );
 
       console.log(
         chalk.green(

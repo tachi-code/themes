@@ -8,7 +8,7 @@ export default {
   repository:
     "https://github.com/microsoft/vscode/blob/661626d0e72f97806550790a98fb87116c9db825/extensions/theme-defaults/themes/2026-light.json",
   type: "light",
-  hash: "wOag_LH8iVyyVtAP8i95SrzJTrnnEE93yjiLkapDXZg",
+  hash: "AekxlXdBLKDoqrzPu_QmTU3FyH4y-t8JFFzSVK5F0PI",
   colors: {
     "checkbox.border": "#868686",
     "editor.background": "#FFFFFF",
