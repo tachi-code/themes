@@ -110,14 +110,14 @@
       "name": "horizon-bright",
       "version": "1.0.0",
       "type": "light",
-      "author": "alexandernanberg"
+      "author": "jolaleye"
     },
     {
       "displayName": "Horizon",
       "name": "horizon",
       "version": "1.0.0",
       "type": "dark",
-      "author": "alexandernanberg"
+      "author": "jolaleye"
     },
     {
       "displayName": "Houston",

@@ -3,7 +3,7 @@ export default {
   displayName: "Horizon",
   description: "Horizon theme",
   version: "1.0.0",
-  author: "alexandernanberg",
+  author: "jolaleye",
   license: "MIT",
   repository:
     "https://github.com/alexandernanberg/horizon-theme-vscode/blob/83c848d0efd5d57ac7c9d868b53ae375d8a27692/themes/horizon.json",

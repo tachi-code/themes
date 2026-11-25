@@ -125,7 +125,6 @@ export default {
     "extensionButton.prominentHoverBackground": "#ee9417",
     focusBorder: "#f29718",
     foreground: "#828e9f",
-    "gitDecoration.conflictingResourceForeground": "",
     "gitDecoration.deletedResourceForeground": "#ff7383",
     "gitDecoration.ignoredResourceForeground": "#828e9f80",
     "gitDecoration.modifiedResourceForeground": "#478acc",

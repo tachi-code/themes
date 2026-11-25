@@ -48,6 +48,9 @@ const MANUAL_AUTHORS: Record<string, string> = {
   "github-light-default": "GitHub",
   "solarized-dark": "Microsoft",
   "solarized-light": "Microsoft",
+  // tm-themes sources these from a fork; the license holder is the original author
+  horizon: "jolaleye",
+  "horizon-bright": "jolaleye",
 };
 
 const fileExists = async (filePath: string): Promise<boolean> => {
@@ -107,6 +110,11 @@ const importThemes = async (): Promise<void> => {
         const themeJsonContent = await fs.readFile(themeJsonPath, "utf-8");
         const themeData = JSON.parse(themeJsonContent);
 
+        // An empty string is not a color; drop it so the default applies
+        for (const [key, value] of Object.entries(themeData.colors ?? {})) {
+          if (value === "") delete themeData.colors[key];
+        }
+
         // Determine author from various sources
         let author: string;
         if (MANUAL_AUTHORS[name]) {
@@ -131,35 +139,13 @@ const importThemes = async (): Promise<void> => {
           throw new Error(`License information missing for theme: ${name}`);
         }
 
-        // Check if theme already exists and compare hashes
-        const outputPath = path.join(rawThemesDir, `${name}.ts`);
-        let version = "1.0.0";
-        let isUpdate = false;
-
-        if (await fileExists(outputPath)) {
-          // Raw themes are Prettier-formatted TypeScript modules, not JSON, so
-          // load the module instead of parsing its source text.
-          const existingTheme: { hash?: string; version?: string } = (
-            await import(pathToFileURL(outputPath).href)
-          ).default;
-          const existingVersion = existingTheme.version || "1.0.0";
-          if (existingTheme.hash && existingTheme.hash !== hash) {
-            // Hash changed, increment the minor version
-            const [major, minor] = existingVersion.split(".").map(Number);
-            version = `${major}.${minor + 1}.0`;
-            isUpdate = true;
-          } else {
-            // Hash unchanged, keep existing version
-            version = existingVersion;
-          }
-        }
-
         // Create the complete theme object with metadata
+        const outputPath = path.join(rawThemesDir, `${name}.ts`);
         const completeTheme = {
           name,
           displayName,
           description: `${displayName} theme`,
-          version,
+          version: "1.0.0",
           author: author,
           license: license,
           repository: source,
@@ -167,6 +153,31 @@ const importThemes = async (): Promise<void> => {
           hash,
           ...themeData,
         };
+
+        // Keep the version of an existing theme, bumping the minor version
+        // when anything that gets published has changed
+        let isUpdate = false;
+        if (await fileExists(outputPath)) {
+          // Raw themes are Prettier-formatted TypeScript modules, not JSON, so
+          // load the module instead of parsing its source text.
+          const existingTheme: { version?: string } = (
+            await import(pathToFileURL(outputPath).href)
+          ).default;
+          const existingVersion = existingTheme.version || "1.0.0";
+          const versionMatch = /^(\d+)\.(\d+)\.\d+$/.exec(existingVersion);
+          if (!versionMatch) {
+            throw new Error(
+              `Existing theme has an invalid version: ${existingVersion}`,
+            );
+          }
+          isUpdate =
+            JSON.stringify({ ...existingTheme, version: "" }) !==
+            JSON.stringify({ ...completeTheme, version: "" });
+          completeTheme.version = isUpdate
+            ? `${versionMatch[1]}.${Number(versionMatch[2]) + 1}.0`
+            : existingVersion;
+        }
+        const { version } = completeTheme;
 
         // Write to rawThemes as TypeScript file
         const tsContent = `export default ${JSON.stringify(completeTheme, null, 2)};\n`;
@@ -204,6 +215,10 @@ const importThemes = async (): Promise<void> => {
       ),
     );
 
+    if (errorCount > 0) {
+      process.exitCode = 1;
+    }
+
     // Display themes with missing author information
     if (missingAuthors.length > 0) {
       console.log(
@@ -228,6 +243,7 @@ const importThemes = async (): Promise<void> => {
     }
   } catch (err) {
     console.error(chalk.red.bold(`\n💥 Error importing themes:`), err);
+    process.exitCode = 1;
   }
 };
 
