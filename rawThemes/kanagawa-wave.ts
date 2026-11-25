@@ -2,13 +2,13 @@ export default {
   name: "kanagawa-wave",
   displayName: "Kanagawa Wave",
   description: "Kanagawa Wave theme",
-  version: "1.0.0",
+  version: "1.1.0",
   author: "metapho-re",
   license: "MIT",
   repository:
-    "https://github.com/metapho-re/kanagawa-vscode-theme/blob/6ea302d7087c3e37c84a3bfc09225250bb9fc7b9/themes/kanagawa-wave-color-theme.json",
+    "https://github.com/metapho-re/kanagawa-vscode-theme/blob/cfc400efbda65f273f50bffd32c65a4077e82fce/themes/kanagawa-wave-color-theme.json",
   type: "dark",
-  hash: "7VbMqE7JFJzJEhQJVkxLemHPraBRuxAsRrVhAu8oLYI",
+  hash: "U5QXanoJy_ONpqo9jZkqrDWLAF5rrNHqOFp8FuGiMVE",
   colors: {
     "activityBar.background": "#2A2A37",
     "activityBar.foreground": "#DCD7BA",
@@ -87,7 +87,7 @@ export default {
     "list.focusBackground": "#2A2A37",
     "list.focusForeground": "#DCD7BA",
     "list.highlightForeground": "#7E9CD8",
-    "list.hoverBackground": "#363646",
+    "list.hoverBackground": "#2D4F6799",
     "list.hoverForeground": "#DCD7BA",
     "list.inactiveSelectionBackground": "#2A2A37",
     "list.inactiveSelectionForeground": "#DCD7BA",
@@ -217,6 +217,12 @@ export default {
     },
     {
       scope: ["storage.modifier"],
+      settings: {
+        foreground: "#957FB8",
+      },
+    },
+    {
+      scope: ["keyword"],
       settings: {
         foreground: "#957FB8",
       },
@@ -398,12 +404,6 @@ export default {
       scope: ["entity.name.import.go"],
       settings: {
         foreground: "#98BB6C",
-      },
-    },
-    {
-      scope: ["keyword.blade"],
-      settings: {
-        foreground: "#957FB8",
       },
     },
     {

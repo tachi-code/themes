@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npx tsx build.ts && prettier --write ./themes/**/*.json",
     "build:strict": "npx tsx build.ts --strict && prettier --write ./themes/**/*.json",
-    "import": "npx tsx import-tm-themes.ts",
+    "import": "npx tsx import-tm-themes.ts && prettier --write ./rawThemes/*.ts",
     "import:vscode": "npx tsx import-vscode-themes.ts",
     "prepare": "husky"
   },
@@ -19,7 +19,7 @@
     "jsonc-parser": "^3.3.1",
     "lint-staged": "^15.5.1",
     "prettier": "^3.5.3",
-    "tm-themes": "^1.10.12"
+    "tm-themes": "^1.12.12"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.1",

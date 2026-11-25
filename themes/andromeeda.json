@@ -2,12 +2,12 @@
   "name": "andromeeda",
   "displayName": "Andromeeda",
   "description": "Andromeeda theme",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "@EliverLara",
   "license": "MIT",
-  "repository": "https://github.com/EliverLara/Andromeda/blob/7d71470cd030df73b9b2774c89499fc4d0ef8d1c/themes/Andromeda-color-theme.json",
+  "repository": "https://github.com/EliverLara/Andromeda/blob/5a7e7059b4e14f4623eb647464570df70992528a/themes/Andromeda-color-theme.json",
   "type": "dark",
-  "hash": "qgmtUfkFXSw9Xeh8CmtbwBXux4wdJiooJI5JlXdv2FE",
+  "hash": "JNa5tmkFrwURbGnjeOcFLuVbi6SkXKY_fyrwqWgOUAY",
   "colors": {
     "activityBar.background": "#23262E",
     "activityBar.dropBackground": "#3a404e",
@@ -182,7 +182,8 @@
         "constant.name.attribute.tag.jade",
         "punctuation.definition.metadata.markdown",
         "punctuation.definition.string.end.markdown",
-        "punctuation.definition.string.begin.markdown"
+        "punctuation.definition.string.begin.markdown",
+        "string.unquoted.cmake"
       ],
       "settings": {
         "foreground": "#D5CED9"
@@ -277,7 +278,8 @@
         "meta.link",
         "meta.image",
         "markup.italic",
-        "source.js support.type"
+        "source.js support.type",
+        "support.type"
       ],
       "settings": {
         "foreground": "#c74ded"

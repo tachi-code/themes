@@ -2,13 +2,13 @@ export default {
   name: "kanagawa-dragon",
   displayName: "Kanagawa Dragon",
   description: "Kanagawa Dragon theme",
-  version: "1.0.0",
+  version: "1.1.0",
   author: "metapho-re",
   license: "MIT",
   repository:
-    "https://github.com/metapho-re/kanagawa-vscode-theme/blob/6ea302d7087c3e37c84a3bfc09225250bb9fc7b9/themes/kanagawa-dragon-color-theme.json",
+    "https://github.com/metapho-re/kanagawa-vscode-theme/blob/cfc400efbda65f273f50bffd32c65a4077e82fce/themes/kanagawa-dragon-color-theme.json",
   type: "dark",
-  hash: "5bb_koviyjSDDS1Ra7sUpUhuNjyQMQ8LvWdF0vK7I88",
+  hash: "6vSUGV5rZRGNmn8oGs1OME4WyxeaKdnyOk3C4YJkF4I",
   colors: {
     "activityBar.background": "#282727",
     "activityBar.foreground": "#C5C9C5",
@@ -87,7 +87,7 @@ export default {
     "list.focusBackground": "#282727",
     "list.focusForeground": "#C5C9C5",
     "list.highlightForeground": "#8BA4B0",
-    "list.hoverBackground": "#393836",
+    "list.hoverBackground": "#2D4F6799",
     "list.hoverForeground": "#C5C9C5",
     "list.inactiveSelectionBackground": "#282727",
     "list.inactiveSelectionForeground": "#C5C9C5",
@@ -217,6 +217,12 @@ export default {
     },
     {
       scope: ["storage.modifier"],
+      settings: {
+        foreground: "#8992A7",
+      },
+    },
+    {
+      scope: ["keyword"],
       settings: {
         foreground: "#8992A7",
       },
@@ -398,12 +404,6 @@ export default {
       scope: ["entity.name.import.go"],
       settings: {
         foreground: "#8A9A7B",
-      },
-    },
-    {
-      scope: ["keyword.blade"],
-      settings: {
-        foreground: "#8992A7",
       },
     },
     {

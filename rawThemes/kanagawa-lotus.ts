@@ -2,13 +2,13 @@ export default {
   name: "kanagawa-lotus",
   displayName: "Kanagawa Lotus",
   description: "Kanagawa Lotus theme",
-  version: "1.0.0",
+  version: "1.1.0",
   author: "metapho-re",
   license: "MIT",
   repository:
-    "https://github.com/metapho-re/kanagawa-vscode-theme/blob/6ea302d7087c3e37c84a3bfc09225250bb9fc7b9/themes/kanagawa-lotus-color-theme.json",
+    "https://github.com/metapho-re/kanagawa-vscode-theme/blob/cfc400efbda65f273f50bffd32c65a4077e82fce/themes/kanagawa-lotus-color-theme.json",
   type: "light",
-  hash: "6xsFcqh1kmixPMl0Wgo18lFWyNoVJ2QDEmC0hw7qKuw",
+  hash: "raAMD28KZ4VT_KY2f6Tsf_1Rj-mcl3R4UooGGD1TmFA",
   colors: {
     "activityBar.background": "#E7DBA0",
     "activityBar.foreground": "#545464",
@@ -87,7 +87,7 @@ export default {
     "list.focusBackground": "#E7DBA0",
     "list.focusForeground": "#545464",
     "list.highlightForeground": "#4D699B",
-    "list.hoverBackground": "#E4D794",
+    "list.hoverBackground": "#B5CBD299",
     "list.hoverForeground": "#545464",
     "list.inactiveSelectionBackground": "#E7DBA0",
     "list.inactiveSelectionForeground": "#545464",
@@ -217,6 +217,12 @@ export default {
     },
     {
       scope: ["storage.modifier"],
+      settings: {
+        foreground: "#624C83",
+      },
+    },
+    {
+      scope: ["keyword"],
       settings: {
         foreground: "#624C83",
       },
@@ -398,12 +404,6 @@ export default {
       scope: ["entity.name.import.go"],
       settings: {
         foreground: "#6F894E",
-      },
-    },
-    {
-      scope: ["keyword.blade"],
-      settings: {
-        foreground: "#624C83",
       },
     },
     {

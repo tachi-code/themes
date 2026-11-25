@@ -3,9 +3,23 @@
     {
       "displayName": "Andromeeda",
       "name": "andromeeda",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "type": "dark",
       "author": "@EliverLara"
+    },
+    {
+      "displayName": "Ayu Light",
+      "name": "ayu-light",
+      "version": "1.0.0",
+      "type": "light",
+      "author": "ayu-theme"
+    },
+    {
+      "displayName": "Ayu Mirage",
+      "name": "ayu-mirage",
+      "version": "1.0.0",
+      "type": "dark",
+      "author": "ayu-theme"
     },
     {
       "displayName": "Dark 2026",
@@ -92,6 +106,20 @@
       "author": "@jdinhify"
     },
     {
+      "displayName": "Horizon Bright",
+      "name": "horizon-bright",
+      "version": "1.0.0",
+      "type": "light",
+      "author": "jolaleye"
+    },
+    {
+      "displayName": "Horizon",
+      "name": "horizon",
+      "version": "1.0.0",
+      "type": "dark",
+      "author": "jolaleye"
+    },
+    {
       "displayName": "Houston",
       "name": "houston",
       "version": "1.0.0",
@@ -101,21 +129,21 @@
     {
       "displayName": "Kanagawa Dragon",
       "name": "kanagawa-dragon",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "type": "dark",
       "author": "metapho-re"
     },
     {
       "displayName": "Kanagawa Lotus",
       "name": "kanagawa-lotus",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "type": "light",
       "author": "metapho-re"
     },
     {
       "displayName": "Kanagawa Wave",
       "name": "kanagawa-wave",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "type": "dark",
       "author": "metapho-re"
     },
@@ -178,14 +206,21 @@
     {
       "displayName": "Monokai",
       "name": "monokai",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "type": "dark",
       "author": "microsoft"
     },
     {
+      "displayName": "Night Owl Light",
+      "name": "night-owl-light",
+      "version": "1.0.0",
+      "type": "light",
+      "author": "@sdras"
+    },
+    {
       "displayName": "One Light",
       "name": "one-light",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "type": "light",
       "author": "@akamud"
     },
@@ -206,16 +241,16 @@
     {
       "displayName": "Red",
       "name": "red",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "type": "dark",
       "author": "microsoft"
     },
     {
       "displayName": "Rosé Pine Dawn",
       "name": "rose-pine-dawn",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "type": "light",
-      "author": "rose-pine"
+      "author": "@rose-pine"
     },
     {
       "displayName": "Slack Dark",
@@ -241,14 +276,14 @@
     {
       "displayName": "Solarized Dark",
       "name": "solarized-dark",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "type": "dark",
       "author": "Microsoft"
     },
     {
       "displayName": "Solarized Light",
       "name": "solarized-light",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "type": "light",
       "author": "Microsoft"
     },
@@ -262,7 +297,7 @@
     {
       "displayName": "Vesper",
       "name": "vesper",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "type": "dark",
       "author": "raunofreiberg"
     },
