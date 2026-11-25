@@ -2,7 +2,7 @@
   "name": "dark-2026",
   "displayName": "Dark 2026",
   "description": "Dark 2026 theme",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "author": "Microsoft",
   "license": "MIT",
   "repository": "https://github.com/microsoft/vscode/blob/661626d0e72f97806550790a98fb87116c9db825/extensions/theme-defaults/themes/2026-dark.json",
