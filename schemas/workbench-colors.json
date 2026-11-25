@@ -11003,13 +11003,7 @@
       "description": "Background color of the agent status indicator in the titlebar.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "color-hex",
-          "defaultSnippets": [
-            {
-              "body": "${1:#ff0000}"
-            }
-          ]
+          "$ref": "#/$defs/_28"
         },
         {
           "$ref": "#/$defs/_1"
@@ -11020,13 +11014,7 @@
       "description": "Background color of the agent sessions window shell and gradient base.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "color-hex",
-          "defaultSnippets": [
-            {
-              "body": "${1:#ff0000}"
-            }
-          ]
+          "$ref": "#/$defs/_28"
         },
         {
           "$ref": "#/$defs/_1"
@@ -11037,13 +11025,7 @@
       "description": "Background color of badges in the agent sessions window.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "color-hex",
-          "defaultSnippets": [
-            {
-              "body": "${1:#ff0000}"
-            }
-          ]
+          "$ref": "#/$defs/_28"
         },
         {
           "$ref": "#/$defs/_1"
@@ -11054,13 +11036,7 @@
       "description": "Foreground color of badges in the agent sessions window.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "color-hex",
-          "defaultSnippets": [
-            {
-              "body": "${1:#ff0000}"
-            }
-          ]
+          "$ref": "#/$defs/_28"
         },
         {
           "$ref": "#/$defs/_1"
@@ -11071,13 +11047,7 @@
       "description": "Background color of the chat input field in the agent sessions window.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "color-hex",
-          "defaultSnippets": [
-            {
-              "body": "${1:#ff0000}"
-            }
-          ]
+          "$ref": "#/$defs/_28"
         },
         {
           "$ref": "#/$defs/_1"
@@ -11088,13 +11058,7 @@
       "description": "Border color of the chat input field in the agent sessions window.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "color-hex",
-          "defaultSnippets": [
-            {
-              "body": "${1:#ff0000}"
-            }
-          ]
+          "$ref": "#/$defs/_28"
         },
         {
           "$ref": "#/$defs/_1"
@@ -11105,13 +11069,7 @@
       "description": "Border color of the chat input field when focused in the agent sessions window.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "color-hex",
-          "defaultSnippets": [
-            {
-              "body": "${1:#ff0000}"
-            }
-          ]
+          "$ref": "#/$defs/_28"
         },
         {
           "$ref": "#/$defs/_1"
@@ -11122,13 +11080,7 @@
       "description": "Foreground color of the chat input field in the agent sessions window.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "color-hex",
-          "defaultSnippets": [
-            {
-              "body": "${1:#ff0000}"
-            }
-          ]
+          "$ref": "#/$defs/_28"
         },
         {
           "$ref": "#/$defs/_1"
@@ -11139,13 +11091,7 @@
       "description": "Placeholder text color in the chat input field in the agent sessions window.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "color-hex",
-          "defaultSnippets": [
-            {
-              "body": "${1:#ff0000}"
-            }
-          ]
+          "$ref": "#/$defs/_28"
         },
         {
           "$ref": "#/$defs/_1"
@@ -11156,13 +11102,7 @@
       "description": "Tint color used in the background gradient of the agent sessions window shell.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "color-hex",
-          "defaultSnippets": [
-            {
-              "body": "${1:#ff0000}"
-            }
-          ]
+          "$ref": "#/$defs/_28"
         },
         {
           "$ref": "#/$defs/_1"
@@ -11173,13 +11113,7 @@
       "description": "Background color of the New Session button in the agent sessions sidebar.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "color-hex",
-          "defaultSnippets": [
-            {
-              "body": "${1:#ff0000}"
-            }
-          ]
+          "$ref": "#/$defs/_28"
         },
         {
           "$ref": "#/$defs/_1"
@@ -11190,13 +11124,7 @@
       "description": "Border color of the New Session button in the agent sessions sidebar.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "color-hex",
-          "defaultSnippets": [
-            {
-              "body": "${1:#ff0000}"
-            }
-          ]
+          "$ref": "#/$defs/_28"
         },
         {
           "$ref": "#/$defs/_1"
@@ -11207,13 +11135,7 @@
       "description": "Foreground color of the New Session button in the agent sessions sidebar.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "color-hex",
-          "defaultSnippets": [
-            {
-              "body": "${1:#ff0000}"
-            }
-          ]
+          "$ref": "#/$defs/_28"
         },
         {
           "$ref": "#/$defs/_1"
@@ -11224,13 +11146,7 @@
       "description": "Background color of the New Session button when hovered in the agent sessions sidebar.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "color-hex",
-          "defaultSnippets": [
-            {
-              "body": "${1:#ff0000}"
-            }
-          ]
+          "$ref": "#/$defs/_28"
         },
         {
           "$ref": "#/$defs/_1"
@@ -11241,13 +11157,7 @@
       "description": "Background color of the card panels (chat, files, terminal) in the agent sessions window.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "color-hex",
-          "defaultSnippets": [
-            {
-              "body": "${1:#ff0000}"
-            }
-          ]
+          "$ref": "#/$defs/_28"
         },
         {
           "$ref": "#/$defs/_1"
@@ -11258,13 +11168,7 @@
       "description": "Border color of the card panels (chat, files, terminal) in the agent sessions window.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "color-hex",
-          "defaultSnippets": [
-            {
-              "body": "${1:#ff0000}"
-            }
-          ]
+          "$ref": "#/$defs/_28"
         },
         {
           "$ref": "#/$defs/_1"
@@ -11275,13 +11179,7 @@
       "description": "Foreground color of the card panels (chat, files, terminal) in the agent sessions window.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "color-hex",
-          "defaultSnippets": [
-            {
-              "body": "${1:#ff0000}"
-            }
-          ]
+          "$ref": "#/$defs/_28"
         },
         {
           "$ref": "#/$defs/_1"
@@ -11292,13 +11190,7 @@
       "description": "Background color of the unread sessions count badge on the sidebar toggle.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "color-hex",
-          "defaultSnippets": [
-            {
-              "body": "${1:#ff0000}"
-            }
-          ]
+          "$ref": "#/$defs/_28"
         },
         {
           "$ref": "#/$defs/_1"
@@ -11309,13 +11201,7 @@
       "description": "Foreground color of the unread sessions count badge on the sidebar toggle.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "color-hex",
-          "defaultSnippets": [
-            {
-              "body": "${1:#ff0000}"
-            }
-          ]
+          "$ref": "#/$defs/_28"
         },
         {
           "$ref": "#/$defs/_1"
@@ -11326,13 +11212,7 @@
       "description": "Border color for integrated browser pages.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "color-hex",
-          "defaultSnippets": [
-            {
-              "body": "${1:#ff0000}"
-            }
-          ]
+          "$ref": "#/$defs/_28"
         },
         {
           "$ref": "#/$defs/_1"
@@ -11343,13 +11223,7 @@
       "description": "Secondary button border color.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "color-hex",
-          "defaultSnippets": [
-            {
-              "body": "${1:#ff0000}"
-            }
-          ]
+          "$ref": "#/$defs/_28"
         },
         {
           "$ref": "#/$defs/_1"
@@ -11360,13 +11234,7 @@
       "description": "Accent color of the animated chat input border shown while a request is in flight.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "color-hex",
-          "defaultSnippets": [
-            {
-              "body": "${1:#ff0000}"
-            }
-          ]
+          "$ref": "#/$defs/_28"
         },
         {
           "$ref": "#/$defs/_1"
@@ -11415,13 +11283,7 @@
       "description": "Shimmer highlight for thinking/working labels.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "color-hex",
-          "defaultSnippets": [
-            {
-              "body": "${1:#ff0000}"
-            }
-          ]
+          "$ref": "#/$defs/_28"
         },
         {
           "$ref": "#/$defs/_1"
@@ -11432,13 +11294,7 @@
       "description": "The first color used in confetti animations.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "color-hex",
-          "defaultSnippets": [
-            {
-              "body": "${1:#ff0000}"
-            }
-          ]
+          "$ref": "#/$defs/_28"
         },
         {
           "$ref": "#/$defs/_1"
@@ -11449,13 +11305,7 @@
       "description": "The second color used in confetti animations.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "color-hex",
-          "defaultSnippets": [
-            {
-              "body": "${1:#ff0000}"
-            }
-          ]
+          "$ref": "#/$defs/_28"
         },
         {
           "$ref": "#/$defs/_1"
@@ -11466,13 +11316,7 @@
       "description": "The third color used in confetti animations.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "color-hex",
-          "defaultSnippets": [
-            {
-              "body": "${1:#ff0000}"
-            }
-          ]
+          "$ref": "#/$defs/_28"
         },
         {
           "$ref": "#/$defs/_1"
@@ -11483,13 +11327,7 @@
       "description": "The fourth color used in confetti animations.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "color-hex",
-          "defaultSnippets": [
-            {
-              "body": "${1:#ff0000}"
-            }
-          ]
+          "$ref": "#/$defs/_28"
         },
         {
           "$ref": "#/$defs/_1"
@@ -11500,13 +11338,7 @@
       "description": "The fifth color used in confetti animations.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "color-hex",
-          "defaultSnippets": [
-            {
-              "body": "${1:#ff0000}"
-            }
-          ]
+          "$ref": "#/$defs/_28"
         },
         {
           "$ref": "#/$defs/_1"
@@ -11517,13 +11349,7 @@
       "description": "The sixth color used in confetti animations.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "color-hex",
-          "defaultSnippets": [
-            {
-              "body": "${1:#ff0000}"
-            }
-          ]
+          "$ref": "#/$defs/_28"
         },
         {
           "$ref": "#/$defs/_1"
@@ -11534,13 +11360,7 @@
       "description": "Background color of connected tabs in editor group title headers. Editor groups are the containers of editors.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "color-hex",
-          "defaultSnippets": [
-            {
-              "body": "${1:#ff0000}"
-            }
-          ]
+          "$ref": "#/$defs/_28"
         },
         {
           "$ref": "#/$defs/_1"
@@ -11551,13 +11371,7 @@
       "description": "Outline color of the focused (keyboard-navigated) entry in the suggest widget.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "color-hex",
-          "defaultSnippets": [
-            {
-              "body": "${1:#ff0000}"
-            }
-          ]
+          "$ref": "#/$defs/_28"
         },
         {
           "$ref": "#/$defs/_1"
@@ -11568,13 +11382,7 @@
       "description": "Border color of the Activity bar in the default side position when the modern UI is enabled.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "color-hex",
-          "defaultSnippets": [
-            {
-              "body": "${1:#ff0000}"
-            }
-          ]
+          "$ref": "#/$defs/_28"
         },
         {
           "$ref": "#/$defs/_1"
@@ -11585,13 +11393,7 @@
       "description": "Background color of active Activity bar items in the default side position when the modern UI is enabled.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "color-hex",
-          "defaultSnippets": [
-            {
-              "body": "${1:#ff0000}"
-            }
-          ]
+          "$ref": "#/$defs/_28"
         },
         {
           "$ref": "#/$defs/_1"
@@ -11602,13 +11404,7 @@
       "description": "Foreground color of active Activity bar items in the default side position when the modern UI is enabled.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "color-hex",
-          "defaultSnippets": [
-            {
-              "body": "${1:#ff0000}"
-            }
-          ]
+          "$ref": "#/$defs/_28"
         },
         {
           "$ref": "#/$defs/_1"
@@ -11619,13 +11415,7 @@
       "description": "Background color of Activity bar items in the default side position when hovering and the modern UI is enabled.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "color-hex",
-          "defaultSnippets": [
-            {
-              "body": "${1:#ff0000}"
-            }
-          ]
+          "$ref": "#/$defs/_28"
         },
         {
           "$ref": "#/$defs/_1"
@@ -11636,13 +11426,7 @@
       "description": "Foreground color of Activity bar items in the default side position when hovering and the modern UI is enabled.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "color-hex",
-          "defaultSnippets": [
-            {
-              "body": "${1:#ff0000}"
-            }
-          ]
+          "$ref": "#/$defs/_28"
         },
         {
           "$ref": "#/$defs/_1"
@@ -11653,13 +11437,7 @@
       "description": "Quick picker foreground color of the match highlights on the focused item.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "color-hex",
-          "defaultSnippets": [
-            {
-              "body": "${1:#ff0000}"
-            }
-          ]
+          "$ref": "#/$defs/_28"
         },
         {
           "$ref": "#/$defs/_1"
@@ -11670,13 +11448,7 @@
       "description": "Status bar background color when a workspace or folder is opened and the window is inactive. Debugging and other background overrides take precedence. If not set, the current status bar background is used.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "color-hex",
-          "defaultSnippets": [
-            {
-              "body": "${1:#ff0000}"
-            }
-          ]
+          "$ref": "#/$defs/_28"
         },
         {
           "$ref": "#/$defs/_1"
@@ -11687,13 +11459,7 @@
       "description": "Background color of framed container surfaces (\"cards\"), such as the floating workbench panels in the modern layout.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "color-hex",
-          "defaultSnippets": [
-            {
-              "body": "${1:#ff0000}"
-            }
-          ]
+          "$ref": "#/$defs/_28"
         },
         {
           "$ref": "#/$defs/_1"
@@ -11704,13 +11470,7 @@
       "description": "Border color of framed container surfaces (\"cards\"), such as the floating workbench panels in the modern layout.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "color-hex",
-          "defaultSnippets": [
-            {
-              "body": "${1:#ff0000}"
-            }
-          ]
+          "$ref": "#/$defs/_28"
         },
         {
           "$ref": "#/$defs/_1"
@@ -11721,13 +11481,7 @@
       "description": "Foreground color of framed container surfaces (\"cards\"), such as the floating workbench panels in the modern layout.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "color-hex",
-          "defaultSnippets": [
-            {
-              "body": "${1:#ff0000}"
-            }
-          ]
+          "$ref": "#/$defs/_28"
         },
         {
           "$ref": "#/$defs/_1"
@@ -11738,13 +11492,7 @@
       "description": "Color of dividers between tabs.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "color-hex",
-          "defaultSnippets": [
-            {
-              "body": "${1:#ff0000}"
-            }
-          ]
+          "$ref": "#/$defs/_28"
         },
         {
           "$ref": "#/$defs/_1"
