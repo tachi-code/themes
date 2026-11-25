@@ -10998,6 +10998,506 @@
           "$ref": "#/$defs/_1"
         }
       ]
+    },
+    "agentStatusIndicator.background": {
+      "description": "Background color of the agent status indicator in the titlebar.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/_28"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "agents.background": {
+      "description": "Background color of the agent sessions window shell and gradient base.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/_28"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "agentsBadge.background": {
+      "description": "Background color of badges in the agent sessions window.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/_28"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "agentsBadge.foreground": {
+      "description": "Foreground color of badges in the agent sessions window.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/_28"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "agentsChatInput.background": {
+      "description": "Background color of the chat input field in the agent sessions window.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/_28"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "agentsChatInput.border": {
+      "description": "Border color of the chat input field in the agent sessions window.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/_28"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "agentsChatInput.focusBorder": {
+      "description": "Border color of the chat input field when focused in the agent sessions window.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/_28"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "agentsChatInput.foreground": {
+      "description": "Foreground color of the chat input field in the agent sessions window.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/_28"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "agentsChatInput.placeholderForeground": {
+      "description": "Placeholder text color in the chat input field in the agent sessions window.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/_28"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "agentsGradient.tintColor": {
+      "description": "Tint color used in the background gradient of the agent sessions window shell.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/_28"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "agentsNewSessionButton.background": {
+      "description": "Background color of the New Session button in the agent sessions sidebar.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/_28"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "agentsNewSessionButton.border": {
+      "description": "Border color of the New Session button in the agent sessions sidebar.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/_28"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "agentsNewSessionButton.foreground": {
+      "description": "Foreground color of the New Session button in the agent sessions sidebar.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/_28"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "agentsNewSessionButton.hoverBackground": {
+      "description": "Background color of the New Session button when hovered in the agent sessions sidebar.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/_28"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "agentsPanel.background": {
+      "description": "Background color of the card panels (chat, files, terminal) in the agent sessions window.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/_28"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "agentsPanel.border": {
+      "description": "Border color of the card panels (chat, files, terminal) in the agent sessions window.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/_28"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "agentsPanel.foreground": {
+      "description": "Foreground color of the card panels (chat, files, terminal) in the agent sessions window.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/_28"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "agentsUnreadBadge.background": {
+      "description": "Background color of the unread sessions count badge on the sidebar toggle.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/_28"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "agentsUnreadBadge.foreground": {
+      "description": "Foreground color of the unread sessions count badge on the sidebar toggle.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/_28"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "browser.border": {
+      "description": "Border color for integrated browser pages.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/_28"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "button.secondaryBorder": {
+      "description": "Secondary button border color.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/_28"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "chat.inputWorkingBorderColor1": {
+      "description": "Accent color of the animated chat input border shown while a request is in flight.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/_28"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "chat.requestBubbleBackground": {
+      "description": "Background color of the chat request bubble.",
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "color-hex",
+          "defaultSnippets": [
+            {
+              "body": "${1:#ff0000}"
+            }
+          ],
+          "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+          "patternErrorMessage": "This color must be transparent or it will obscure content"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "chat.requestBubbleHoverBackground": {
+      "description": "Background color of the chat request bubble on hover.",
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "color-hex",
+          "defaultSnippets": [
+            {
+              "body": "${1:#ff0000}"
+            }
+          ],
+          "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+          "patternErrorMessage": "This color must be transparent or it will obscure content"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "chat.thinkingShimmer": {
+      "description": "Shimmer highlight for thinking/working labels.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/_28"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "confetti.color1": {
+      "description": "The first color used in confetti animations.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/_28"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "confetti.color2": {
+      "description": "The second color used in confetti animations.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/_28"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "confetti.color3": {
+      "description": "The third color used in confetti animations.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/_28"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "confetti.color4": {
+      "description": "The fourth color used in confetti animations.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/_28"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "confetti.color5": {
+      "description": "The fifth color used in confetti animations.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/_28"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "confetti.color6": {
+      "description": "The sixth color used in confetti animations.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/_28"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "editorGroupHeader.connectedTabsBackground": {
+      "description": "Background color of connected tabs in editor group title headers. Editor groups are the containers of editors.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/_28"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "editorSuggestWidget.focusOutline": {
+      "description": "Outline color of the focused (keyboard-navigated) entry in the suggest widget.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/_28"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "modernActivityBar.border": {
+      "description": "Border color of the Activity bar in the default side position when the modern UI is enabled.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/_28"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "modernActivityBarItem.activeBackground": {
+      "description": "Background color of active Activity bar items in the default side position when the modern UI is enabled.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/_28"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "modernActivityBarItem.activeForeground": {
+      "description": "Foreground color of active Activity bar items in the default side position when the modern UI is enabled.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/_28"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "modernActivityBarItem.hoverBackground": {
+      "description": "Background color of Activity bar items in the default side position when hovering and the modern UI is enabled.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/_28"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "modernActivityBarItem.hoverForeground": {
+      "description": "Foreground color of Activity bar items in the default side position when hovering and the modern UI is enabled.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/_28"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "quickInputList.focusHighlightForeground": {
+      "description": "Quick picker foreground color of the match highlights on the focused item.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/_28"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "statusBar.inactiveBackground": {
+      "description": "Status bar background color when a workspace or folder is opened and the window is inactive. Debugging and other background overrides take precedence. If not set, the current status bar background is used.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/_28"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "surface.background": {
+      "description": "Background color of framed container surfaces (\"cards\"), such as the floating workbench panels in the modern layout.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/_28"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "surface.border": {
+      "description": "Border color of framed container surfaces (\"cards\"), such as the floating workbench panels in the modern layout.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/_28"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "surface.foreground": {
+      "description": "Foreground color of framed container surfaces (\"cards\"), such as the floating workbench panels in the modern layout.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/_28"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
+    },
+    "tab.divider": {
+      "description": "Color of dividers between tabs.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/_28"
+        },
+        {
+          "$ref": "#/$defs/_1"
+        }
+      ]
     }
   },
   "$defs": {

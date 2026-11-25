@@ -23,3 +23,10 @@ the application. Loaded themes are then cached locally and updated when a versio
 ## Shiki tm-themes
 
 This repository is currently primarily composed of a subset of themes from the shiki tm-themes collection.
+
+## VS Code default themes
+
+Dark 2026 and Light 2026 are VS Code's default themes, taken from the
+[theme-defaults](https://github.com/microsoft/vscode/tree/main/extensions/theme-defaults) extension of
+microsoft/vscode (MIT). `npm run import:vscode` fetches them at the release pinned in
+[import-vscode-themes.ts](./import-vscode-themes.ts) and resolves their `include` chains into complete themes.

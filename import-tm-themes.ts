@@ -37,6 +37,8 @@ const EXCLUDED_THEMES = [
   "github-light-high-contrast",
   "dark-high-contrast",
   "light-high-contrast",
+  "dark-2026", // imported by import-vscode-themes.ts
+  "light-2026",
   "aurora-x", // excluded due to GPL license
 ];
 

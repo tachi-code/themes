@@ -8,6 +8,13 @@
       "author": "@EliverLara"
     },
     {
+      "displayName": "Dark 2026",
+      "name": "dark-2026",
+      "version": "1.0.0",
+      "type": "dark",
+      "author": "Microsoft"
+    },
+    {
       "displayName": "Dracula Theme Soft",
       "name": "dracula-soft",
       "version": "1.0.0",
@@ -118,6 +125,13 @@
       "version": "1.0.0",
       "type": "dark",
       "author": "Jaredk3nt"
+    },
+    {
+      "displayName": "Light 2026",
+      "name": "light-2026",
+      "version": "1.0.0",
+      "type": "light",
+      "author": "Microsoft"
     },
     {
       "displayName": "Material Theme Darker",
