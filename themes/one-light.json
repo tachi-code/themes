@@ -2,12 +2,12 @@
   "name": "one-light",
   "displayName": "One Light",
   "description": "One Light theme",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "@akamud",
   "license": "MIT",
   "repository": "https://github.com/akamud/vscode-theme-onelight/blob/f1ff6b87c6379a22b34354bbf64d355cd2adc611/themes/OneLight.json",
   "type": "light",
-  "hash": "Pd7HK9OmiYrVuXUnRsBmOSayMVqwsM7XIKrMj5bWi1Y",
+  "hash": "BTC5SDDFLqjKJtv_okGv6wRd9SRe-eREhVdph6Fl0tg",
   "colors": {
     "activityBar.background": "#FAFAFA",
     "activityBar.foreground": "#121417",
@@ -437,7 +437,7 @@
       "scope": ["invalid.illegal"],
       "settings": {
         "background": "#FF1414",
-        "foreground": "white"
+        "foreground": "#50A14F"
       }
     },
     {

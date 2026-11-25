@@ -3,7 +3,7 @@
     {
       "displayName": "Andromeeda",
       "name": "andromeeda",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "type": "dark",
       "author": "@EliverLara"
     },
@@ -101,21 +101,21 @@
     {
       "displayName": "Kanagawa Dragon",
       "name": "kanagawa-dragon",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "type": "dark",
       "author": "metapho-re"
     },
     {
       "displayName": "Kanagawa Lotus",
       "name": "kanagawa-lotus",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "type": "light",
       "author": "metapho-re"
     },
     {
       "displayName": "Kanagawa Wave",
       "name": "kanagawa-wave",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "type": "dark",
       "author": "metapho-re"
     },
@@ -178,14 +178,14 @@
     {
       "displayName": "Monokai",
       "name": "monokai",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "type": "dark",
       "author": "microsoft"
     },
     {
       "displayName": "One Light",
       "name": "one-light",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "type": "light",
       "author": "@akamud"
     },
@@ -206,16 +206,16 @@
     {
       "displayName": "Red",
       "name": "red",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "type": "dark",
       "author": "microsoft"
     },
     {
       "displayName": "Rosé Pine Dawn",
       "name": "rose-pine-dawn",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "type": "light",
-      "author": "rose-pine"
+      "author": "@rose-pine"
     },
     {
       "displayName": "Slack Dark",
@@ -241,14 +241,14 @@
     {
       "displayName": "Solarized Dark",
       "name": "solarized-dark",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "type": "dark",
       "author": "Microsoft"
     },
     {
       "displayName": "Solarized Light",
       "name": "solarized-light",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "type": "light",
       "author": "Microsoft"
     },
@@ -262,7 +262,7 @@
     {
       "displayName": "Vesper",
       "name": "vesper",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "type": "dark",
       "author": "raunofreiberg"
     },
